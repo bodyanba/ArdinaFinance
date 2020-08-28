@@ -1,0 +1,155 @@
+@media (min-width: 1200px)
+	.container
+		max-width: 1230px
+
+@media (min-width: 1350px)
+	.row-team
+		margin-left: -25px
+		margin-right: -25px
+		> [class*="col"]
+			padding-left: 25px
+			padding-right: 25px
+
+@media (max-width: 1199px)
+
+@media (max-width: 991px)
+	.fz-75
+		font-size: 45px
+	.fz-65, .fz-25
+		font-size: 35px
+		line-height: 1.2
+	.fz-50
+		font-size: 25px
+		line-height: 1.2
+	.fz-40
+		font-size: 30px
+		line-height: 1.33
+	.fz-35
+		font-size: 27px
+		line-height: 1.11
+	.fz-22
+		font-size: 18px
+	.fz-18
+		font-size: 1rem
+
+	.logo
+		width: 155px
+		height: 18px
+		background-size: cover
+
+	header
+		&.left-header, &.page-header
+			padding: 20px 15px
+
+	section
+		&.section-home
+			padding: 42px 15px
+			padding-bottom: 100px
+		&.section-contact
+			padding-top: 66px
+			padding-bottom: 70px
+		&.section-hero
+			.bg
+				padding-bottom: 102px
+		&#section-2
+			padding-top: 91px
+			padding-bottom: 32px
+		&#section-3
+			padding-top: 94px
+			padding-bottom: 19px
+			&.section-approach-3
+				img
+					margin-bottom: 62px
+
+	footer
+		&.page-footer
+			padding: 0 21px 9px 14px
+
+@media (max-width: 767px)
+	footer
+		&.page-footer
+			padding-bottom: 74px
+
+	header
+		&.white 
+			#sandwich
+				&:not(.active)
+					background-color: rgba(26, 31, 51, .95)
+			&.white-2
+				#sandwich
+					&:not(.active)
+						background-color: rgba(0, 0, 0, .95)
+		&.black 
+			#sandwich
+				&:not(.active)
+					border-top: 1px solid rgba(26, 31, 51, .85)
+					background-color: rgba(255, 255, 255, .9)
+			&.black-2
+				#sandwich
+					&:not(.active)
+						background-color: rgba(250, 250, 250, .9)
+
+	#sandwich
+		position: fixed
+		bottom: 0
+		left: 0
+		right: 0
+		border-top: 1px solid rgba(255, 255, 255, 0.5)
+		padding: 19px 15px
+		text-align: center
+		.menu-descr
+			.menu-close
+				transform: translateY(60px)
+		&:after, &:before
+			display: none
+		&.active
+			.menu-close
+				transform: translateY(0)
+			.menu-open
+				transform: translateY(-60px)
+	
+	.langs
+		bottom: 69px
+	section
+		&#section-3
+			&.section-about-3
+				padding-top: 100px
+				padding-bottom: 77px
+				.row
+					margin-bottom: 0
+					&:last-of-type
+						.col
+							&:before
+								display: none
+		&#section-4
+			&.section-about-4
+				padding-top: 94px
+				padding-bottom: 35px
+		&#section-5
+			&.section-about-5
+				padding-top: 35px
+				padding-bottom: 20px
+				[class*="col"]
+					img
+						max-width: 150px
+					+ [class*="col"]
+						&:before 
+							content: ''
+							display: block
+							height: 1px
+							opacity: .2
+							background-color: #fff
+							margin-bottom: 40px
+		
+@media (max-width: 575px)
+	.body
+		&.home
+			background-image: url(../img/video.jpg)
+			background-attachment: fixed
+
+	.bg-vid-home
+		opacity: 0
+
+@media (max-height: 400px)
+	.langs
+		right: 20px
